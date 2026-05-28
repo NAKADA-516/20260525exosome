@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>歯髄由来幹細胞培養上清液 — NEWAGE CLINIC</title>
+<link rel="icon" type="image/png" href="public/favicon.png">
+<link rel="apple-touch-icon" href="public/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Shippori+Mincho:wght@300;400;500&family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ivory:    '#FAFAFA',
+        'ivory-2':'#F2F8F8',
+        'ivory-3':'#E0F2F1',
+        teal:     '#0ABAB5',
+        'teal-lt':'#5DD6D1',
+        dark:     '#1A2626',
+      }
+    }
+  }
+}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-inner">
+    <!-- ブランド -->
+    <a href="#" class="nav-brand-link">
+      <div class="brand-name en">NEWAGE CLINIC</div>
+      <div class="brand-sub">Beauty &amp; Regeneration</div>
+    </a>
+
+    <!-- デスクトップ: リンク -->
+    <ul class="nav-links">
+      <li><a href="#about">特徴</a></li>
+      <li><a href="#treatment">施術について</a></li>
+      <li><a href="#doctor">医師紹介</a></li>
+      <li><a href="#flow">施術の流れ</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#contact" class="nav-link-cta">予約</a></li>
+    </ul>
+
+    <!-- デスクトップ: 電話 -->
+    <div class="nav-right">
+      <div>
+        <div class="nav-tel en">03-6281-9733</div>
+        <div class="label">10:00–19:00 ／ 月・水定休</div>
+      </div>
+    </div>
+
+    <!-- モバイル: ハンバーガーボタン -->
+    <button
+      class="hamburger"
+      id="hamburgerBtn"
+      aria-label="メニューを開く"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+      <span class="hamburger-line l1"></span>
+      <span class="hamburger-line l2"></span>
+      <span class="hamburger-line l3"></span>
+      <span class="hamburger-label">MENU</span>
+    </button>
+  </div>
+</nav>
+
+<!-- モバイルメニュー オーバーレイ -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="ナビゲーション">
+  <div class="mobile-menu-inner">
+
+    <!-- 閉じるボタン -->
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="メニューを閉じる">
+      <span></span><span></span>
+    </button>
+
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#about"      class="mobile-nav-link">特徴</a></li>
+        <li><a href="#treatment"  class="mobile-nav-link">施術について</a></li>
+        <li><a href="#doctor"     class="mobile-nav-link">医師紹介</a></li>
+        <li><a href="#flow"       class="mobile-nav-link">施術の流れ</a></li>
+        <li><a href="#faq"        class="mobile-nav-link">よくある質問</a></li>
+        <li><a href="#clinic"     class="mobile-nav-link">クリニック情報</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu-cta">
+      <a href="https://line.me/R/ti/p/@605skqjc" target="_blank" rel="noopener" class="mobile-cta-line">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 5.92 2 10.72c0 3.27 1.95 6.14 4.9 7.84L6 22l4.18-2.08C10.76 20.3 11.37 20.4 12 20.4c5.52 0 10-3.92 10-8.72S17.52 2 12 2z"/></svg>
+        LINE で予約（24時間）
+      </a>
+      <a href="tel:0362819733" class="mobile-cta-tel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.09-1.09a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        03-6281-9733
+      </a>
+    </div>
+
+    <!-- フッター情報 -->
+    <div class="mobile-menu-info">
+      <div class="mobile-info-section">
+        <h4 class="mobile-info-label">Access</h4>
+        <address class="mobile-info-address">
+          〒104-0061<br>
+          東京都中央区銀座3-11-16<br>
+          VORT銀座イースト 10F<br>
+          <span class="mobile-info-train">東銀座駅 徒歩1〜3分</span>
+        </address>
+        <a
+          href="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A73-11-16+VORT%E9%8A%80%E5%BA%A7%E3%82%A4%E3%83%BC%E3%82%B9%E3%83%88"
+          target="_blank"
+          rel="noopener"
+          class="mobile-map-link"
+        >Google マップで見る →</a>
+      </div>
+    </div>
+
+    <p class="mobile-menu-copy">© 2025 NEWAGE CLINIC. All Rights Reserved.</p>
+
+  </div>
+</div>
+
+<!-- オーバーレイ背景 -->
+<div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-img" src="public/exosome_hero_v2.webp" alt="美と再生" loading="eager">
+  <div class="hero-overlay"></div>
+  <!-- 装飾：エクソソーム・波紋モチーフ -->
+  <svg style="position:absolute;top:0;right:0;width:50%;height:100%;opacity:0.12;pointer-events:none;" viewBox="0 0 500 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- 波紋（エクソソームが細胞に届くイメージ） -->
+    <circle cx="320" cy="340" r="60"  stroke="#0ABAB5" stroke-width="0.8" fill="none"/>
+    <circle cx="320" cy="340" r="100" stroke="#0ABAB5" stroke-width="0.5" fill="none"/>
+    <circle cx="320" cy="340" r="145" stroke="#5DD6D1" stroke-width="0.4" fill="none"/>
+    <circle cx="320" cy="340" r="195" stroke="#5DD6D1" stroke-width="0.3" fill="none"/>
+    <circle cx="320" cy="340" r="250" stroke="#0ABAB5" stroke-width="0.2" fill="none"/>
+    <!-- 中心ドット（粒子） -->
+    <circle cx="320" cy="340" r="4" fill="#0ABAB5" opacity="0.6"/>
+    <circle cx="320" cy="340" r="10" stroke="#0ABAB5" stroke-width="0.6" fill="none"/>
+    <!-- 周辺小粒子 -->
+    <circle cx="380" cy="260" r="3" fill="#5DD6D1" opacity="0.5"/>
+    <circle cx="245" cy="290" r="2" fill="#0ABAB5" opacity="0.4"/>
+    <circle cx="410" cy="390" r="2.5" fill="#5DD6D1" opacity="0.45"/>
+    <circle cx="230" cy="420" r="2" fill="#0ABAB5" opacity="0.35"/>
+    <circle cx="360" cy="460" r="2" fill="#5DD6D1" opacity="0.4"/>
+    <!-- 六角格子（分子構造） -->
+    <path d="M160,600 L185,585 L210,600 L210,630 L185,645 L160,630 Z" stroke="#0ABAB5" stroke-width="0.4" fill="none"/>
+    <path d="M210,600 L235,585 L260,600 L260,630 L235,645 L210,630 Z" stroke="#0ABAB5" stroke-width="0.4" fill="none"/>
+    <path d="M185,645 L210,630 L235,645 L235,675 L210,690 L185,675 Z" stroke="#5DD6D1" stroke-width="0.3" fill="none"/>
+    <path d="M135,645 L160,630 L185,645 L185,675 L160,690 L135,675 Z" stroke="#0ABAB5" stroke-width="0.3" fill="none"/>
+    <path d="M260,600 L285,585 L310,600 L310,630 L285,645 L260,630 Z" stroke="#5DD6D1" stroke-width="0.3" fill="none"/>
+    <!-- 上部グラデーションライン -->
+    <line x1="100" y1="100" x2="460" y2="100" stroke="#0ABAB5" stroke-width="0.3" stroke-dasharray="4 8"/>
+    <line x1="80"  y1="150" x2="460" y2="150" stroke="#5DD6D1" stroke-width="0.2" stroke-dasharray="3 12"/>
+  </svg>
+
+  <div class="hero-content">
+    <p class="hero-label">Dental Pulp Stem Cell Supernatant</p>
+    <h1 class="hero-title en" data-split>
+      歯髄由来<br>幹細胞培養上清液
+    </h1>
+    <p class="hero-title-ja">美と再生の最前線。内側から輝く肌へ。</p>
+    <div class="hero-price-box">
+      <div class="off">数量限定 60% OFF</div>
+      <div class="price-original en">定価 <s>¥320,000</s></div>
+      <div class="price en">¥128,000<small>（税込）/ 10cc</small></div>
+    </div>
+    <div class="hero-ctas">
+      <a href="https://line.me/R/ti/p/@605skqjc" target="_blank" rel="noopener" class="btn btn-gold">LINE予約</a>
+      <a href="#about" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.32);">詳しく見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY BANNER -->
+<div class="urgency-bar">
+  <p>🎁 <strong>数量限定キャンペーン実施中</strong> — 10ccスペシャルプラン <s style="opacity:0.7;">¥320,000</s> → <strong>¥128,000</strong>（税込・60%OFF）</p>
+</div>
+
+
+<!-- PAIN POINTS -->
+<section class="pain-section marble-bg">
+  <div class="pain-inner">
+    <div class="pain-header">
+      <p class="label reveal">Your Concerns</p>
+      <div class="rule rule-c reveal" style="background:var(--gold);"></div>
+      <h2 class="en reveal">こんなお悩み、<br>ありませんか？</h2>
+    </div>
+    <div class="pain-layout">
+      <div class="pain-photo reveal">
+        <img src="public/pain_concern_woman.png" alt="肌の悩みを感じている女性">
+      </div>
+      <div class="pain-grid">
+      <div class="pain-card reveal">
+        <div class="pain-check"></div>
+        <p>スキンケアを続けているのに<br>くすみ・シミが気になる</p>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-check"></div>
+        <p>ハリ・弾力がなくなり<br>フェイスラインが崩れてきた</p>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-check"></div>
+        <p>毛穴の開き・ざらつきが<br>ファンデで隠せなくなった</p>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-check"></div>
+        <p>ニキビ跡・赤みが<br>なかなか改善しない</p>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-check"></div>
+        <p>乾燥・小じわが目立ち<br>老けて見られるようになった</p>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-check"></div>
+        <p>レーザーや注射は怖い<br>ダウンタイムも取れない</p>
+      </div>
+    </div><!-- /pain-grid -->
+    </div><!-- /pain-layout -->
+    <div class="pain-resolve reveal">
+      <p>それ、表面だけのケアでは限界があります。</p>
+      <strong>「細胞そのものを再生させる」<br>新しいアプローチが必要です。</strong>
+    </div>
+  </div>
+</section>
+
+<!-- BRIDGE: PAIN → SOLUTION -->
+<section class="bridge-section">
+  <div class="section">
+    <div class="bridge-header">
+      <p class="label reveal">The Solution</p>
+      <div class="rule rule-c reveal" style="background:var(--gold);"></div>
+      <h2 class="en reveal">なぜ従来のケアでは<br>限界があるのか</h2>
+    </div>
+    <div class="bridge-steps">
+      <div class="bridge-step reveal">
+        <div class="bridge-step-num en">01</div>
+        <div class="bridge-step-body">
+          <h4>表面ケアの限界</h4>
+          <p>化粧品・外用薬の有効成分は、皮膚の最外層（角質層）止まり。真皮層のコラーゲン産生や細胞の再生には届きません。</p>
+        </div>
+      </div>
+      <div class="bridge-step-arrow reveal">↓</div>
+      <div class="bridge-step reveal" data-d="1">
+        <div class="bridge-step-num en">02</div>
+        <div class="bridge-step-body">
+          <h4>「細胞再生」がカギ</h4>
+          <p>肌老化の根本原因は「線維芽細胞の活性低下」と「コラーゲン分解の加速」。これを外から働きかけるには、細胞レベルへ直接届く成分が必要です。</p>
+        </div>
+      </div>
+      <div class="bridge-step-arrow reveal">↓</div>
+      <div class="bridge-step reveal" data-d="2">
+        <div class="bridge-step-num en">03</div>
+        <div class="bridge-step-body">
+          <h4>歯髄由来上清液が解決する</h4>
+          <p>点滴によって3,000種以上の成長因子・エクソソームを血中に届け、全身の細胞へ直接アプローチ。根本から「細胞を再生させる」新しいアプローチです。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider sec-divider--right" aria-hidden="true"></div>
+
+<!-- INTRO -->
+<section id="about">
+  <div class="section">
+    <div class="intro-grid">
+      <div class="intro-text">
+        <span class="label reveal">What is Exosome</span>
+        <div class="rule reveal"></div>
+        <h2 class="en reveal">歯髄由来<br>幹細胞培養上清液とは</h2>
+        <div class="h2-ja reveal" style="margin-top:8px;font-size:14px;font-weight:300;letter-spacing:0.12em;color:var(--sub);">Dental Pulp–Derived Stem Cell Supernatant</div>
+        <div style="height:28px;"></div>
+        <p class="reveal">歯髄由来幹細胞培養上清液は、乳歯や親知らずなどから採取された歯髄幹細胞を培養する過程で得られる上澄み液です。この液体には、幹細胞が分泌する<strong>「成長因子」「サイトカイン」「エクソソーム」</strong>などの有効成分が豊富に含まれており、<strong>肌や体の再生・修復を内外からサポート</strong>します。</p>
+        <p class="reveal" style="margin-top:16px;">歯髄（しずい）とは、歯の中心部にある柔らかい組織のことで、いわゆる「歯の神経」として知られています。この部分には血管や神経に加え、非常に再生能力の高い<strong>「間葉系幹細胞（MSC）」</strong>が多く存在しています。特に<strong>若年者の歯髄から得られる幹細胞</strong>は、その活性の高さから<strong>美容医療分野で注目</strong>を集めています。</p>
+        <p class="reveal" style="margin-top:16px;">当クリニックでは、高品質な歯髄由来幹細胞培養上清液を使用し、お肌の若返りや全身の健康促進を目指す最先端の治療を提供しています。<strong>10cc あたり ¥128,000（税込）</strong>というアクセスしやすい価格設定で、最新の再生医療の恩恵を体験いただけます。</p>
+        <div style="height:24px;"></div>
+      </div>
+      <div class="intro-img">
+        <div class="clip-wrap">
+          <div class="clip-inner">
+            <img src="public/SIZUI.webp" alt="歯髄由来幹細胞培養上清液" style="width:100%;height:auto;display:block;object-fit:contain;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SECTION -->
+<section id="features" class="why-bg section-wide">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="why-header">
+      <p class="label reveal">Why Dental Pulp</p>
+      <div class="rule rule-c reveal"></div>
+      <h2 class="en reveal">なぜ歯髄由来の<br>幹細胞なのか</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-card-num en">01</div>
+        <h3>卓越した再生能力</h3>
+        <div class="why-card-border"></div>
+        <p>歯髄幹細胞は他の部位の幹細胞と比較して増殖能力・分化能力が高く、より多くの成長因子を産生します。神経系・骨・軟骨など多様な組織への分化能力を持ちます。</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-card-num en">02</div>
+        <h3>強力な抗炎症作用</h3>
+        <div class="why-card-border"></div>
+        <p>IL-6・KGF・HGFなど炎症を抑制する成長因子を豊富に含み、肌荒れ・ニキビ跡・赤みなどの炎症性トラブルに対して効果的にアプローチします。</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-card-num en">03</div>
+        <h3>豊富な成長因子</h3>
+        <div class="why-card-border"></div>
+        <p>FGF・EGF・KGFなど美肌効果をもたらす成長因子を高濃度で含有。線維芽細胞の活性化を促しコラーゲン・エラスチンの産生をサポートします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="choose-section choose-bg">
+  <div class="section">
+    <div class="choose-header">
+      <p class="label reveal">Why Choose Us</p>
+      <div class="rule rule-c reveal" style="background:var(--gold);"></div>
+      <h2 class="en reveal">NEWAGE CLINICが<br>選ばれる3つの理由</h2>
+    </div>
+    <div class="choose-grid">
+      <div class="choose-card reveal">
+        <div class="choose-num en">01</div>
+        <div class="choose-body">
+          <h3>国内製造・医療グレード品質</h3>
+          <p>海外製品が多い市場において、当院は国内GMP準拠施設で製造した上清液のみを使用。製造ロット単位の品質証明書を取得・保管しています。</p>
+        </div>
+      </div>
+      <div class="choose-card reveal" data-d="1">
+        <div class="choose-num en">02</div>
+        <div class="choose-body">
+          <h3>再診・経過相談への対応</h3>
+          <p>施術後に気になることがあれば、いつでも再診・ご相談いただけます。院長が継続的に経過を確認し、一人ひとりに合った対応を行います。</p>
+        </div>
+      </div>
+      <div class="choose-card reveal" data-d="2">
+        <div class="choose-num en">03</div>
+        <div class="choose-body">
+          <h3>銀座一等地・アクセス抜群</h3>
+          <p>東銀座駅より徒歩1〜3分。仕事帰りや買い物のついでに通えるロケーション。施術後そのまま外出できるダウンタイムのなさも好評です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENT DETAIL -->
+<section id="treatment" class="treatment-section marble-bg">
+  <div class="section">
+    <div class="section-header reveal" style="text-align:center;margin-bottom:56px;">
+      <span class="label reveal">Treatment</span>
+      <div class="rule rule-c reveal"></div>
+      <h2 class="en reveal">施術について</h2>
+      <div class="h2-ja reveal" style="margin-top:12px;font-size:clamp(14px,1.6vw,18px);font-weight:400;letter-spacing:0.18em;color:var(--sub);">Stem Cell Supernatant Drip</div>
+    </div>
+
+    <div class="treatment-layout">
+      <div class="treatment-photo-col">
+        <div class="treatment-photo reveal">
+          <img src="public/treatment_iv_v4.png" alt="エクソソーム点滴施術シーン">
+        </div>
+        <div class="treatment-info-notice reveal">
+          <span class="treatment-info-label en">INFORMATION</span>
+          <p>初診時の診察はすべて院長が担当しております。<strong>院長の診察日（火曜・木曜・金曜）</strong>に初診のご予約を承っております。</p>
+        </div>
+      </div>
+      <div class="treatment-body">
+        <p class="reveal">幹細胞上清液点滴は、歯髄由来幹細胞培養上清液を静脈内に直接投与する施術です。血流を通じて全身の細胞に有効成分を届け、体内から美と健康をサポートします。</p>
+        <p class="reveal" style="margin-top:16px;">体内の細胞が活性化されることで、肌の若返りだけでなく、疲労回復や免疫力向上など、全身的な効果が期待できます。点滴中はリラックスできる空間で、ゆったりとお過ごしいただけます。</p>
+        <p class="reveal" style="margin-top:16px;">特に<strong>疲れやすい方・免疫力を高めたい方・内側からの美容効果を求める方</strong>におすすめです。美容と健康を同時にサポートする、まさに「美容医療の新たな一歩」と言える施術です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEC -->
+<div class="spec-bar reveal">
+  <div class="spec-bar-item">
+    <span class="spec-bar-label">施術時間</span>
+    <span class="spec-bar-value">約 30〜45 分</span>
+  </div>
+  <div class="spec-bar-sep"></div>
+  <div class="spec-bar-item">
+    <span class="spec-bar-label">料金</span>
+    <span class="spec-bar-value">¥128,000（税込）/ 10cc</span>
+  </div>
+  <div class="spec-bar-sep"></div>
+  <div class="spec-bar-item">
+    <span class="spec-bar-label">効果持続</span>
+    <span class="spec-bar-value">個人差あり。約 3～6ヶ月程度</span>
+  </div>
+  <div class="spec-bar-sep"></div>
+  <div class="spec-bar-item">
+    <span class="spec-bar-label">推奨頻度</span>
+    <span class="spec-bar-value">月 1～2回</span>
+  </div>
+</div>
+
+<!-- PRECAUTIONS -->
+<div class="precaution-bar reveal">
+  <div class="precaution-bar-inner">
+
+    <details class="precaution-details">
+      <summary class="precaution-summary">利用できない方</summary>
+      <p class="precaution-text">妊娠中またはその可能性のある方 ／ 授乳中の方 ／ 心臓疾患のある方 ／ 体調の優れない方 ／ 飲酒をされている方 ／ 施術部位に金属プレートやシリコンを埋めている方 ／ 施術部位に感染症・傷・皮膚疾患がある方 ／ 出血性疾患・ケロイド体質の方</p>
+    </details>
+
+    <details class="precaution-details">
+      <summary class="precaution-summary">注意事項</summary>
+      <p class="precaution-text">公的医療保険は適用されません ／ 診察状況によって時間は前後する場合があります ／ 診断の結果、施術を受けられない場合があります ／ 予約はご希望の日時に添えない場合があります ／ 特別定休日（GW・お盆・年末年始など）等の不明点はクリニックへお問い合わせください ／ キャンセル料が発生する場合があります ／ 急な機械トラブル発生時は予約変更をお願いする場合があります ／ 公的身分証明書をご持参ください ／ 未成年者の利用はクリニックへお問い合わせください ／ 他サービスやキャンペーンとの併用はできません</p>
+    </details>
+
+    <details class="precaution-details">
+      <summary class="precaution-summary">医療機器・医薬品について</summary>
+      <p class="precaution-text">国内において薬機法上の承認を取得していない医療機器・医薬品を扱っております ／ 医師等が個人輸入により入手したものです（参照：<a href="https://www.yakubutsu.mhlw.go.jp/individualimport/health_damage/overseas_report/index.html" target="_blank" rel="noopener" class="precaution-link">厚生労働省の案内</a>）／ 同一成分・性能を有する国内承認医薬品等はありません ／ 重大な副作用などが明らかになっていない可能性があります ／ 問い合わせ先：フッターのクリニック情報を参照</p>
+    </details>
+
+  </div>
+</div>
+
+<!-- RESULTS NUMBERS -->
+<section class="results-section">
+  <div class="results-inner">
+    <div class="results-header">
+      <p class="label reveal">Results & Effects</p>
+      <div class="rule rule-c reveal"></div>
+      <h2 class="en reveal">実感できる、変化。</h2>
+    </div>
+    <div class="results-grid results-grid-5">
+      <div class="results-stat reveal">
+        <div class="big en"><span class="count-num" data-count="5200" data-suffix="+" data-format="k">0</span></div>
+        <span class="unit">Total Cases</span>
+        <p class="desc">累計施術件数<br>（2020年開院以来）</p>
+      </div>
+      <div class="results-stat reveal" data-d="1">
+        <div class="big en"><span class="count-num" data-count="95" data-suffix="%">0</span></div>
+        <span class="unit">Satisfaction Rate</span>
+        <p class="desc">施術後に肌のハリ・<br>潤いの改善を実感</p>
+      </div>
+      <div class="results-stat reveal" data-d="2">
+        <div class="big en"><span class="count-num" data-count="87" data-suffix="%">0</span></div>
+        <span class="unit">Repeat Rate</span>
+        <p class="desc">高いリピート率が<br>品質の証</p>
+      </div>
+      <div class="results-stat reveal" data-d="3">
+        <div class="big en"><span class="count-num" data-count="3000" data-suffix="+" data-format="comma">0</span></div>
+        <span class="unit">Growth Factors</span>
+        <p class="desc">3,000種以上の<br>成長因子・サイトカイン含有</p>
+      </div>
+    </div>
+    <div class="effects-grid">
+      <div class="effect-item reveal">
+        <div class="effect-text">
+          <strong>くすみ・シミの改善</strong>
+          <span>メラニン生成を抑制し、透明感のある肌へ導きます</span>
+        </div>
+      </div>
+      <div class="effect-item reveal">
+        <div class="effect-text">
+          <strong>ハリ・弾力の回復</strong>
+          <span>コラーゲン・エラスチン産生を促し、若々しい肌へ</span>
+        </div>
+      </div>
+      <div class="effect-item reveal">
+        <div class="effect-text">
+          <strong>毛穴・肌質の改善</strong>
+          <span>ターンオーバーを正常化し、なめらかな肌質に</span>
+        </div>
+      </div>
+      <div class="effect-item reveal">
+        <div class="effect-text">
+          <strong>炎症・赤みの鎮静</strong>
+          <span>抗炎症作用でニキビ跡・敏感肌にもアプローチ</span>
+        </div>
+      </div>
+      <div class="effect-item reveal">
+        <div class="effect-text">
+          <strong>即効性と持続性</strong>
+          <span>施術直後からうるおいを実感。効果は約3〜6ヶ月持続</span>
+        </div>
+      </div>
+      <div class="effect-item reveal">
+        <div class="effect-text">
+          <strong>安全性の高さ</strong>
+          <span>生きた細胞を使わないため副作用リスクが極めて低い</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- INGREDIENTS -->
+<section id="ingredients" class="section-wide ingr-section-bg">
+  <div class="ingr-grid">
+    <div class="ingr-img clip-wrap">
+      <div class="clip-inner" style="height:100%;min-height:360px;">
+        <img src="public/04.webp" alt="主な有効成分" style="width:100%;height:100%;min-height:360px;object-fit:contain;object-position:center center;display:block;">
+      </div>
+    </div>
+    <div class="ingr-content">
+      <p class="label reveal">Key Ingredients</p>
+      <div class="rule reveal" style="background:var(--gold);"></div>
+      <h2 class="en reveal">主な有効成分</h2>
+      <p class="h2-ja reveal" style="font-size:14px;letter-spacing:0.12em;margin-bottom:36px;">Active Ingredients</p>
+      <ul class="ingr-list">
+        <li class="reveal">
+          <div class="ingr-dot"></div>
+          <div>
+            <div class="ingr-list-title">成長因子（FGF / EGF / KGF）</div>
+            <div class="ingr-list-desc">線維芽細胞の活性化・コラーゲン産生を促進。肌のハリ・弾力を改善します。</div>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="ingr-dot"></div>
+          <div>
+            <div class="ingr-list-title">サイトカイン（IL-6 / HGF）</div>
+            <div class="ingr-list-desc">炎症を鎮め、損傷した皮膚組織の修復を促す生理活性物質です。</div>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="ingr-dot"></div>
+          <div>
+            <div class="ingr-list-title">エクソソーム</div>
+            <div class="ingr-list-desc">細胞間コミュニケーションを担うナノサイズの小胞。成長因子を効率よく細胞内へ届けます。</div>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="ingr-dot"></div>
+          <div>
+            <div class="ingr-list-title">ペプチド類</div>
+            <div class="ingr-list-desc">深い保湿・バリア機能の回復。即時的な潤いと長期的な肌質改善を両立します。</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<!-- BA SECTION REMOVED -->
+<div style="display:none"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- 虹色グラデーション1: ティール→ピンク -->
+      <linearGradient id="bubGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%"   stop-color="rgba(10,186,181,0.55)"/>
+        <stop offset="33%"  stop-color="rgba(90,155,235,0.45)"/>
+        <stop offset="66%"  stop-color="rgba(210,140,190,0.45)"/>
+        <stop offset="100%" stop-color="rgba(170,150,70,0.40)"/>
+      </linearGradient>
+      <!-- 虹色グラデーション2: パープル→ゴールド -->
+      <linearGradient id="bubGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%"   stop-color="rgba(160,120,215,0.50)"/>
+        <stop offset="50%"  stop-color="rgba(10,186,181,0.45)"/>
+        <stop offset="100%" stop-color="rgba(230,160,100,0.45)"/>
+      </linearGradient>
+      <!-- 虹色グラデーション3: ブルー→ティール -->
+      <linearGradient id="bubGrad3" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%"   stop-color="rgba(90,155,235,0.48)"/>
+        <stop offset="50%"  stop-color="rgba(10,186,181,0.42)"/>
+        <stop offset="100%" stop-color="rgba(210,140,190,0.42)"/>
+      </linearGradient>
+    </defs>
+    <!-- 大きなシャボン玉 -->
+    <circle class="bub bub-1" cx="8%"  cy="30%" r="64"/>
+    <circle class="bub bub-2" cx="92%" cy="18%" r="48"/>
+    <circle class="bub bub-3" cx="78%" cy="75%" r="80"/>
+    <circle class="bub bub-4" cx="22%" cy="72%" r="38"/>
+    <circle class="bub bub-5" cx="50%" cy="12%" r="28"/>
+    <circle class="bub bub-6" cx="65%" cy="48%" r="20"/>
+    <!-- ハイライト（光の反射点） -->
+    <circle class="bub-hl" cx="calc(8% - 18px)"  cy="calc(30% - 20px)" r="12"/>
+    <circle class="bub-hl" cx="calc(92% - 14px)" cy="calc(18% - 16px)" r="9"/>
+    <circle class="bub-hl" cx="calc(78% - 22px)" cy="calc(75% - 24px)" r="16"/>
+  </svg>
+
+  <div class="section">
+    <div class="ba-header">
+      <p class="label reveal">Before &amp; After</p>
+      <div class="rule rule-c reveal" style="background:var(--gold);"></div>
+      <h2 class="en reveal">実際の施術事例</h2>
+      <p class="ba-header-note reveal">※掲載症例はすべて患者様の同意を得て掲載しています。効果には個人差があります。</p>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-card reveal">
+        <div class="ba-tag">40代 女性 / 3回施術</div>
+        <div class="ba-images">
+          <div class="ba-img-wrap">
+            <div class="ba-img-label">Before</div>
+            <div class="ba-img-ph ba-img-ph--before">
+              <span>症例写真</span>
+            </div>
+          </div>
+          <div class="ba-arrow">→</div>
+          <div class="ba-img-wrap">
+            <div class="ba-img-label ba-img-label--after">After</div>
+            <div class="ba-img-ph ba-img-ph--after">
+              <span>症例写真</span>
+            </div>
+          </div>
+        </div>
+        <div class="ba-result">
+          <div class="ba-result-item"><span class="ba-result-num">↑ 42%</span><span>肌ハリ改善</span></div>
+          <div class="ba-result-item"><span class="ba-result-num">↓ 63%</span><span>くすみ改善</span></div>
+          <div class="ba-result-item"><span class="ba-result-num">3回</span><span>施術回数</span></div>
+        </div>
+        <p class="ba-comment">"フェイスラインが引き締まり、周りから「最近若くなった？」と声をかけられるようになりました。"</p>
+      </div>
+      <div class="ba-card reveal" data-d="1">
+        <div class="ba-tag">30代 女性 / 5回施術</div>
+        <div class="ba-images">
+          <div class="ba-img-wrap">
+            <div class="ba-img-label">Before</div>
+            <div class="ba-img-ph ba-img-ph--before">
+              <span>症例写真</span>
+            </div>
+          </div>
+          <div class="ba-arrow">→</div>
+          <div class="ba-img-wrap">
+            <div class="ba-img-label ba-img-label--after">After</div>
+            <div class="ba-img-ph ba-img-ph--after">
+              <span>症例写真</span>
+            </div>
+          </div>
+        </div>
+        <div class="ba-result">
+          <div class="ba-result-item"><span class="ba-result-num">↓ 78%</span><span>ニキビ跡改善</span></div>
+          <div class="ba-result-item"><span class="ba-result-num">↑ 55%</span><span>潤い向上</span></div>
+          <div class="ba-result-item"><span class="ba-result-num">5回</span><span>施術回数</span></div>
+        </div>
+        <p class="ba-comment">"気になっていたニキビ跡が薄くなり、肌のトーンが均一になりました。素肌に自信が持てるように。"</p>
+      </div>
+      <div class="ba-card reveal" data-d="2">
+        <div class="ba-tag">50代 女性 / 6回施術</div>
+        <div class="ba-images">
+          <div class="ba-img-wrap">
+            <div class="ba-img-label">Before</div>
+            <div class="ba-img-ph ba-img-ph--before">
+              <span>症例写真</span>
+            </div>
+          </div>
+          <div class="ba-arrow">→</div>
+          <div class="ba-img-wrap">
+            <div class="ba-img-label ba-img-label--after">After</div>
+            <div class="ba-img-ph ba-img-ph--after">
+              <span>症例写真</span>
+            </div>
+          </div>
+        </div>
+        <div class="ba-result">
+          <div class="ba-result-item"><span class="ba-result-num">↓ 51%</span><span>小じわ改善</span></div>
+          <div class="ba-result-item"><span class="ba-result-num">↑ 38%</span><span>弾力向上</span></div>
+          <div class="ba-result-item"><span class="ba-result-num">6回</span><span>施術回数</span></div>
+        </div>
+        <p class="ba-comment">"年齢による肌荒れが改善され、コスメの乗りが劇的に変わりました。今も継続中です。"</p>
+      </div>
+    </div>
+</div></div>
+
+<!-- TESTIMONIALS -->
+<section class="testi-section">
+  <div class="testi-inner">
+    <div class="testi-header">
+      <p class="label reveal">Voice of Patients</p>
+      <div class="rule rule-c reveal"></div>
+      <h2 class="en reveal">患者様の声</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="testi-avatar"><img src="public/testi_woman_30s.png" alt="K.M. さん 30代"></div>
+        <span class="testi-tag">30代 女性</span>
+        <span class="testi-quote-mark">"</span>
+        <p class="testi-body">施術を重ねるうちに、肌のハリとツヤが明らかに変わりました。化粧ノリが格段によくなり、周りから「最近肌きれいだね」と言われることが増えました。内側から潤っている実感があります。</p>
+        <div class="testi-rule"></div>
+        <div class="testi-meta">
+          <strong>K.M. さん</strong>
+          <span>肌のハリ・ツヤ向上 · 4回施術</span>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-avatar"><img src="public/testi_woman_40s.png" alt="A.T. さん 40代"></div>
+        <span class="testi-tag">40代 女性</span>
+        <span class="testi-quote-mark">"</span>
+        <p class="testi-body">仕事の疲れがなかなか抜けなくなっていましたが、施術後から体が軽くなりエネルギーが戻ってきた感覚があります。免疫も上がったのか、風邪をひきにくくなりました。肌だけでなく体全体が若返った気がします。</p>
+        <div class="testi-rule"></div>
+        <div class="testi-meta">
+          <strong>A.T. さん</strong>
+          <span>疲労回復・免疫向上 · 5回施術</span>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-avatar"><img src="public/testi_woman_50s.png" alt="Y.S. さん 50代"></div>
+        <span class="testi-tag">50代 女性</span>
+        <span class="testi-quote-mark">"</span>
+        <p class="testi-body">年齢からくる不調や肌の老化に悩んでいましたが、全身の細胞が活性化される感覚があり、自然治癒力が高まった気がします。小じわが薄くなり、体の回復力も上がりました。続けてよかったと心から思います。</p>
+        <div class="testi-rule"></div>
+        <div class="testi-meta">
+          <strong>Y.S. さん</strong>
+          <span>細胞活性化・若返り効果 · 6回施術</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY & QUALITY -->
+<section class="safety-section safety-section-bg">
+  <div class="section">
+    <div class="section-header reveal" style="text-align:center;margin-bottom:56px;">
+      <span class="label reveal">Safety &amp; Quality</span>
+      <div class="rule rule-c reveal"></div>
+      <h2 class="en reveal">安全性と品質へのこだわり</h2>
+      <div class="h2-ja reveal" style="margin-top:12px;font-size:clamp(14px,1.6vw,18px);font-weight:400;letter-spacing:0.18em;color:var(--sub);">Dental Pulp Stem Cell Supernatant Quality</div>
+      <p class="reveal" style="margin-top:20px;max-width:680px;margin-left:auto;margin-right:auto;">当クリニックで使用する歯髄由来幹細胞培養上清液は、厳格な品質管理と安全性テストを経て製造された国内製造の医療グレード製品です。お客様に安心して施術を受けていただくために、品質と安全性に妥協はありません。</p>
+    </div>
+    <div class="safety-layout">
+      <div class="safety-photo reveal">
+        <img src="public/safety_lab.png" alt="品質管理・検査の様子">
+        <img src="public/safety_lab2.png" alt="試験管・顕微鏡による品質検査" class="safety-photo-2nd">
+      </div>
+      <div class="safety-cards-wrap">
+    <div class="safety-grid">
+      <div class="safety-card reveal">
+        <h4>厳格な製造環境</h4>
+        <p>国内のGMP（医薬品等製造品質管理基準）準拠の施設で、クラス100（ISO5相当）の無菌環境下で製造されています。製造工程は完全にトレーサブルで、製品の一貫性が保証されています。</p>
+      </div>
+      <div class="safety-card reveal" data-d="1">
+        <h4>徹底した品質検査</h4>
+        <p>全ロットに対して、ウイルス・マイコプラズマ検査を実施。さらに、エンドトキシン検査、無菌試験なども行い、製品の純度と安全性を確認しています。また、成長因子の含有量分析により、効果の安定性も保証しています。</p>
+      </div>
+      <div class="safety-card reveal" data-d="2">
+        <h4>高品質原料使用</h4>
+        <p>無血清培地を使用し、動物由来成分を一切含まないため、アレルギーリスクを最小化。さらに、放射能・重金属検査も実施し、あらゆる観点から安全性を担保しています。原料となる歯髄幹細胞も厳選されたドナーから採取されています。</p>
+      </div>
+    </div>
+      </div><!-- /safety-cards-wrap -->
+    </div><!-- /safety-layout -->
+    <div class="safety-note reveal" style="margin-top:40px;">
+      <div class="safety-note-inner">
+        <span class="safety-note-icon">🛡</span>
+        <div>
+          <strong>幹細胞培養上清液と幹細胞の違い</strong>
+          <p style="margin-top:6px;">当クリニックで使用しているのは「幹細胞培養上清液」であり、幹細胞そのものを注入するわけではありません。上清液には幹細胞由来の有効成分のみが含まれており、細胞そのものは含まれていないため、より安全性が高く、法的にも美容医療で使用可能な製品です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTOR PROFILE -->
+<section id="doctor" class="doctor-section">
+  <div class="section">
+    <div class="doctor-header">
+      <p class="label reveal">Our Doctor</p>
+      <div class="rule rule-c reveal" style="background:var(--gold);"></div>
+      <h2 class="en reveal">担当医師紹介</h2>
+    </div>
+    <div class="doctor-grid">
+      <div class="doctor-photo reveal">
+        <div class="doctor-photo-wrap">
+          <img src="public/doctor.webp" alt="長島郁雄 院長" loading="lazy">
+        </div>
+        <div class="doctor-name-block">
+          <div class="doctor-name">長島 郁雄</div>
+          <div class="doctor-title">NEWAGE CLINIC 院長</div>
+        </div>
+      </div>
+      <div class="doctor-info reveal" data-d="1">
+        <ul class="doctor-career">
+          <li>
+            <span class="doctor-career-year en">1980</span>
+            <span>東京大学医学部 卒業</span>
+          </li>
+          <li>
+            <span class="doctor-career-year en">1997</span>
+            <span>東京大学外科 講師</span>
+          </li>
+          <li>
+            <span class="doctor-career-year en">2007</span>
+            <span>帝京大学外科病院 教授</span>
+          </li>
+        </ul>
+        <div class="doctor-intro">
+          <p>免疫細胞の「司令塔」であるマクロファージを活性化し、体が本来持つ力を引き出すアプローチを長年研究してきました。アレルギーや慢性疲労、炎症性疾患など幅広い症状の改善に携わり、「薬に頼りすぎない医療」を追い求めてきた結果、たどり着いたのが細胞そのものに働きかける再生医療です。一人ひとりの免疫バランスを整えながら、より自然で健やかな状態へと導くことを大切にしています。</p>
+        </div>
+        <div class="doctor-badges">
+          <span class="doctor-badge">日本美容外科学会 会員</span>
+          <span class="doctor-badge">再生医療等安全性確保法 届出済</span>
+          <span class="doctor-badge">累計施術 5,200件以上</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENT FLOW -->
+<section id="flow" class="flow-section">
+  <div class="section">
+    <div class="flow-header">
+      <p class="label reveal">How It Works</p>
+      <div class="rule rule-c reveal" style="background:var(--gold);"></div>
+      <h2 class="en reveal">施術の流れ</h2>
+    </div>
+
+    <div class="flow-compact reveal">
+
+      <div class="flow-compact-step">
+        <div class="flow-compact-num en">01</div>
+        <div class="flow-compact-body">
+          <h3>診察</h3>
+          <p>医師が問診・診察を行い、治療方針をご提案します。</p>
+        </div>
+      </div>
+
+      <div class="flow-compact-connector"></div>
+
+      <div class="flow-compact-step">
+        <div class="flow-compact-num en">02</div>
+        <div class="flow-compact-body">
+          <h3>施術</h3>
+          <p>点滴または注射（静脈・皮下）で行います。</p>
+        </div>
+      </div>
+
+      <div class="flow-compact-connector"></div>
+
+      <div class="flow-compact-step">
+        <div class="flow-compact-num en">03</div>
+        <div class="flow-compact-body">
+          <h3>施術完了</h3>
+          <p>気になることがあればいつでもご相談ください。</p>
+        </div>
+      </div>
+
+      <div class="flow-compact-sub">
+        <span>⚠ ご体調により投与量を調整する場合があります</span>
+        <span>⚠ 効果・仕上がりには個人差があります</span>
+        <span>※ 入針部位に内出血が生じる場合がありますが、時間とともに治まります</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA BAND -->
+<section id="contact" class="cta-band marble-bg">
+  <span class="label reveal">Book a Consultation — Free</span>
+  <div class="rule rule-c reveal" style="background:var(--gold);"></div>
+  <h2 class="en reveal">今月、肌が変わる体験を。</h2>
+  <p class="reveal" style="margin-top:16px;max-width:480px;margin-left:auto;margin-right:auto;">無料カウンセリング実施中。初めての方も、専門スタッフが肌の状態を見ながら丁寧にご説明します。<br>予約は30秒で完了します。</p>
+  <p class="reveal" style="margin-top:16px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase;">今月残り <strong style="font-size:18px;font-family:'Cormorant Garamond',serif;color:var(--gold);">4</strong> 名様受付中</p>
+  <div class="cta-btns reveal" style="margin-top:44px;">
+    <a href="https://line.me/R/ti/p/@605skqjc" target="_blank" rel="noopener" class="btn btn-gold">LINE予約（24時間受付）</a>
+    <a href="tel:0362819733" class="btn btn-outline">03-6281-9733</a>
+  </div>
+</section>
+
+<div class="sec-divider sec-divider--left" aria-hidden="true"></div>
+
+<!-- PHOTO GALLERY -->
+<section class="photo-section marble-bg">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="photo-header">
+      <p class="label reveal">Gallery</p>
+      <div class="rule rule-c reveal" style="background:var(--gold);"></div>
+      <h2 class="en reveal">ギャラリー</h2>
+    </div>
+    <div class="photo-grid">
+      <div class="photo-item reveal">
+        <img src="public/05.webp" alt="施術ギャラリー1" loading="lazy">
+      </div>
+      <div class="photo-item reveal" data-d="1">
+        <img src="public/06.webp" alt="施術ギャラリー2" loading="lazy">
+      </div>
+      <div class="photo-item reveal" data-d="2">
+        <img src="public/07.webp" alt="施術ギャラリー3" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider sec-divider--right" aria-hidden="true"></div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section">
+    <div class="faq-header">
+      <p class="label reveal">FAQ</p>
+      <div class="rule rule-c reveal"></div>
+      <h2 class="en reveal">よくあるご質問</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span class="faq-q-mark en">Q.</span>
+          <span>幹細胞上清液とは幹細胞そのものですか？</span>
+          <span class="faq-q-arrow en">›</span>
+        </div>
+        <div class="faq-a">
+          <p>いいえ、幹細胞そのものではありません。幹細胞培養上清液とは、幹細胞を培養する際に分泌される「成長因子」「サイトカイン」「エクソソーム」などの再生因子を含む、上澄み液のことです。幹細胞は含まれていないため、より安全に使用できます。</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span class="faq-q-mark en">Q.</span>
+          <span>痛みはありますか？</span>
+          <span class="faq-q-arrow en">›</span>
+        </div>
+        <div class="faq-a">
+          <p>点滴は通常の静脈注射程度ですので痛みは最小限です。</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span class="faq-q-mark en">Q.</span>
+          <span>ダウンタイムはありますか？</span>
+          <span class="faq-q-arrow en">›</span>
+        </div>
+        <div class="faq-a">
+          <p>点滴にはダウンタイムはほとんどありません。</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span class="faq-q-mark en">Q.</span>
+          <span>どのくらいの頻度で施術を受けるのが効果的ですか？</span>
+          <span class="faq-q-arrow en">›</span>
+        </div>
+        <div class="faq-a">
+          <p>2〜4週間に1回のペースで、継続的に受けていただくとより効果が高まります。初回から実感を得られる方もいらっしゃいますが、肌質改善には継続が大切です。</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span class="faq-q-mark en">Q.</span>
+          <span>副作用や安全性が心配です。</span>
+          <span class="faq-q-arrow en">›</span>
+        </div>
+        <div class="faq-a">
+          <p>使用する上清液は、国内の厳格な品質管理のもとで製造された医療用グレードの製品です。無菌製造・ウイルス検査・無血清培地などを徹底しており、安全性には十分に配慮されています。</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span class="faq-q-mark en">Q.</span>
+          <span>パウダールームはありますか？</span>
+          <span class="faq-q-arrow en">›</span>
+        </div>
+        <div class="faq-a">
+          <p>当院にはパウダールームがないため、お化粧をせずにお越しください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLINIC INFO (モバイルアンカー用) -->
+<section id="clinic" class="clinic-info-section">
+  <div class="section">
+    <div class="clinic-info-header reveal">
+      <p class="label">Clinic Information</p>
+      <div class="rule rule-c" style="background:var(--gold);"></div>
+      <h2 class="en">クリニック情報</h2>
+    </div>
+    <div class="clinic-info-grid reveal">
+      <div class="clinic-info-block">
+        <h4 class="clinic-info-label">Access</h4>
+        <address class="clinic-info-address">
+          〒104-0061<br>
+          東京都中央区銀座3-11-16<br>
+          VORT銀座イースト 10F
+        </address>
+        <p class="clinic-info-train">日比谷線 東銀座駅3番出口 徒歩3分<br>都営浅草線 東銀座駅A7・A8出口 徒歩1分</p>
+        <a href="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A73-11-16+VORT%E9%8A%80%E5%BA%A7%E3%82%A4%E3%83%BC%E3%82%B9%E3%83%88" target="_blank" rel="noopener" class="clinic-map-link">Google マップで見る →</a>
+      </div>
+      <div class="clinic-info-block">
+        <h4 class="clinic-info-label">Contact</h4>
+        <a href="tel:0362819733" class="clinic-tel">03-6281-9733</a>
+        <p class="clinic-hours">受付時間 10:00〜19:00<br>（月曜・水曜定休）</p>
+        <a href="https://line.me/R/ti/p/@605skqjc" target="_blank" rel="noopener" class="clinic-line-btn">LINE で予約（24時間受付）</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="marble">
+  <div class="footer-inner">
+
+    <!-- ブランド行 -->
+    <div class="footer-brand-row">
+      <div class="brand-name en">NEWAGE CLINIC</div>
+      <div class="brand-sub">Beauty & Regeneration</div>
+    </div>
+
+    <!-- 2カラム：左=クリニック情報 / 右=地図 -->
+    <div class="footer-access-grid">
+
+      <!-- 左：クリニック説明 -->
+      <div class="footer-info">
+        <p class="footer-desc">
+          最先端の再生医療技術を用いたエクソソーム療法で、<br>
+          肌本来の力を引き出すスペシャルケアを提供します。<br>
+          豊富な幹細胞由来成分が、細胞レベルから美しさを再生。<br>
+          医師監修のもと、安心・安全な施術をお届けします。
+        </p>
+
+        <div class="footer-info-block">
+          <h4>Access</h4>
+          <address>
+            〒104-0061<br>
+            東京都中央区銀座3-11-16<br>
+            VORT銀座イースト 10F<br><br>
+            日比谷線 東銀座駅3番出口 徒歩3分<br>
+            都営浅草線 東銀座駅A7・A8出口 徒歩1分
+          </address>
+        </div>
+
+        <div class="footer-info-block">
+          <h4>Contact</h4>
+          <div class="footer-tel-large en">03-6281-9733</div>
+          <p style="font-size:13px;margin-top:8px;">受付時間 10:00〜19:00（月曜・水曜定休）</p>
+        </div>
+      </div>
+
+      <!-- 右：地図 -->
+      <div class="footer-map">
+        <iframe
+          src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A73-11-16+VORT%E9%8A%80%E5%BA%A7%E3%82%A4%E3%83%BC%E3%82%B9%E3%83%88&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="NEWAGE CLINIC アクセスマップ"
+        ></iframe>
+      </div>
+
+    </div><!-- /footer-access-grid -->
+
+    <div class="footer-bottom">
+      <p class="footer-copy en">© 2025 NEWAGE CLINIC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<div class="floating-cta">
+  <a href="https://line.me/R/ti/p/@605skqjc" target="_blank" rel="noopener" class="f-line">LINE予約</a>
+  <a href="tel:0362819733" class="f-tel">03-6281-9733</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
