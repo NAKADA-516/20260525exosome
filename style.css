@@ -1226,6 +1226,7 @@ body.menu-open { overflow: hidden; }
 
 /* ===== CLINIC INFO SECTION ===== */
 .clinic-info-section {
+  display: none; /* デスクトップでは非表示。モバイルのみ表示 */
   padding: 80px 48px;
   background: var(--light);
 }
@@ -1787,6 +1788,39 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.footer-sns {
+  display: flex;
+  align-items: center;
+}
+.footer-sns-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--sub);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  transition: color 0.25s;
+}
+.footer-sns-link:hover { color: var(--gold); }
+.footer-sns-link svg { flex-shrink: 0; }
+
+/* モバイルメニュー SNS */
+.mobile-menu-sns {
+  padding: 16px 28px 24px;
+  border-top: 1px solid rgba(10,186,181,0.10);
+}
+.mobile-sns-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--sub);
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  transition: color 0.2s;
+}
+.mobile-sns-link:hover { color: var(--gold); }
 .footer-copy {
   font-family: 'Raleway', sans-serif;
   font-size: 10px;
@@ -2690,10 +2724,23 @@ footer {
   padding: 100px 48px;
 }
 .choose-bg {
+  background-color: #f5f9f8;
+  position: relative;
+}
+.choose-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-image: url("public/choose_bg2.png");
   background-size: cover;
   background-position: center top;
-  background-color: #f5f9f8;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+.choose-bg > * {
+  position: relative;
+  z-index: 1;
 }
 .choose-header { text-align: center; margin-bottom: 64px; }
 .choose-header .label { margin-bottom: 20px; }
@@ -3378,7 +3425,7 @@ footer {
   .faq-a p      { font-size: 14px; line-height: 1.8; padding-bottom: 18px; }
 
   /* ━━━━━ クリニック情報 ━━━━━ */
-  .clinic-info-section { padding: 56px 20px; }
+  .clinic-info-section { display: block; padding: 56px 20px; }
   .clinic-info-grid {
     grid-template-columns: 1fr;
     gap: 28px;
