@@ -802,10 +802,10 @@ body.menu-open { overflow: hidden; }
   object-position: 65% top; /* PC: 顔を右寄りに→テキストと被らない */
   opacity: 1;
 }
-/* スマホ: 顔が写る位置に合わせてフォーカス */
+/* スマホ: 顔を右端に寄せてテキストと被らない */
 @media (max-width: 767px) {
   .hero-img {
-    object-position: 72% top;  /* 右寄り強め→テキストと被らない */
+    object-position: right top;
   }
 }
 .hero-overlay {
@@ -816,6 +816,23 @@ body.menu-open { overflow: hidden; }
     transparent 50%,
     rgba(26,38,38,0.10) 100%
   );
+}
+/* スマホ: 左側に白グラデ → テキスト読みやすく・顔と分離 */
+@media (max-width: 767px) {
+  .hero-overlay {
+    background:
+      linear-gradient(
+        to right,
+        rgba(248,253,253,0.72) 0%,
+        rgba(248,253,253,0.45) 45%,
+        transparent 65%
+      ),
+      linear-gradient(
+        180deg,
+        transparent 40%,
+        rgba(26,38,38,0.18) 100%
+      );
+  }
 }
 .hero-content {
   position: relative;
@@ -3101,9 +3118,13 @@ footer {
   .hero-content {
     padding: 0 20px 52px !important;
   }
-  /* スマホ: テキストを左55%に収める → 顔と被らない */
+  /* スマホ: テキストを左48%に収める → 顔（右側）と被らない */
   .hero-content > * {
-    max-width: 58vw;
+    max-width: 48vw;
+  }
+  /* ボタンは少し広めにOK */
+  .hero-ctas {
+    max-width: 54vw !important;
   }
   .hero-title    { font-size: clamp(34px, 9.5vw, 52px) !important; }
   .hero-title-ja { font-size: 14px !important; letter-spacing: 0.14em; }
