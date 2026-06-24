@@ -3234,7 +3234,7 @@ footer {
     align-items: center;
     font-size: 13px;
   }
-  .precaution-text { font-size: 12px; line-height: 1.8; padding-bottom: 16px; }
+  .precaution-text { font-size: 12px; line-height: 1.8; padding: 0 16px 16px !important; }
 
   /* ━━━━━ 数字インパクト ━━━━━ */
   .results-section { padding: 56px 20px; }
@@ -3344,6 +3344,8 @@ footer {
 
   /* ━━━━━ 安全性 ━━━━━ */
   .safety-section  { padding: 56px 20px; }
+  .safety-section-bg { background-attachment: scroll; }
+  .ingr-section-bg   { background-attachment: scroll; }
   .safety-layout   { grid-template-columns: 1fr !important; gap: 24px; }
   .safety-photo    { position: static; }
   .safety-grid {
