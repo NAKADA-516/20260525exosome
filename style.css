@@ -1877,6 +1877,7 @@ footer {
   background: transparent;
   color: var(--dark);
   border-color: var(--dark);
+  white-space: nowrap;
 }
 .floating-cta .f-tel:hover { background: var(--dark); color: #fff; border-color: var(--dark); }
 
