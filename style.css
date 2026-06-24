@@ -1878,8 +1878,17 @@ footer {
   color: var(--dark);
   border-color: var(--dark);
   white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
 }
-.floating-cta .f-tel:hover { background: var(--dark); color: #fff; border-color: var(--dark); }
+/* タッチデバイス以外のみホバーで黒くする */
+@media (hover: hover) {
+  .floating-cta .f-tel:hover { background: var(--dark); color: #fff; border-color: var(--dark); }
+}
+/* タッチ時は軽いフィードバックのみ */
+.floating-cta .f-tel:active {
+  background: rgba(26,38,38,0.08);
+  color: var(--dark);
+}
 
 /* ===== INFORMATION NOTICE ===== */
 .info-notice-section {
