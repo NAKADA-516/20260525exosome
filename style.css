@@ -888,13 +888,13 @@ body.menu-open { overflow: hidden; }
 }
 .hero-price-box .off {
   font-family: 'Shippori Mincho', serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   color: #fff;
   background: linear-gradient(135deg, #0ABAB5, #5DD6D1);
   display: inline-block;
-  padding: 3px 14px;
+  padding: 4px 16px;
   border-radius: 9999px;
   margin-bottom: 10px;
 }
@@ -3069,6 +3069,12 @@ footer {
 }
 .urgency-bar strong { font-weight: 500; font-size: 15px; }
 
+/* スマホのみ改行 */
+.sp-br { display: none; }
+@media (max-width: 767px) {
+  .sp-br { display: inline; }
+}
+
 /* ===== RESPONSIVE ===== */
 /* ============================================================
    MOBILE FIRST — 完全対応ブロック
@@ -3096,6 +3102,7 @@ footer {
 
   /* ---- 見出し系 ---- */
   h2.en, .en.section-h2 { font-size: clamp(28px, 8vw, 40px); }
+  .bridge-header h2 { font-size: clamp(18px, 5.5vw, 24px); }
 
   /* ━━━━━ NAV ━━━━━ */
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
@@ -3126,7 +3133,7 @@ footer {
     margin: 0 0 12px !important;
   }
   .hero-price-box .price    { font-size: clamp(24px, 7vw, 34px) !important; }
-  .hero-price-box .off      { font-size: 10px !important; }
+  .hero-price-box .off      { font-size: 10px !important; letter-spacing: 0.04em !important; padding: 3px 10px !important; }
   .hero-price-box .price-original { font-size: 12px !important; }
 
   /* CTAボタン: 縦並び・フル幅・44px以上 */
@@ -3166,6 +3173,8 @@ footer {
     border-radius: 8px;
   }
   .pain-card p { font-size: 14px; line-height: 1.7; }
+  .pain-resolve p      { font-size: 16px !important; line-height: 1.7; }
+  .pain-resolve strong { font-size: 15px !important; line-height: 1.8; }
 
   /* ━━━━━ BRIDGE (解決ステップ) ━━━━━ */
   .bridge-section { padding: 56px 20px; }
@@ -3411,7 +3420,7 @@ footer {
 
   /* ━━━━━ CTAバンド ━━━━━ */
   .cta-band { padding: 64px 20px !important; }
-  .cta-band h2 { font-size: clamp(26px, 8vw, 38px); }
+  .cta-band h2 { font-size: clamp(20px, 6vw, 26px); }
   .cta-band p  { font-size: 14px; line-height: 1.8; margin-bottom: 28px; }
   .cta-band .cta-btns {
     flex-direction: column !important;
