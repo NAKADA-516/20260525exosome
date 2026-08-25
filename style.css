@@ -888,13 +888,13 @@ body.menu-open { overflow: hidden; }
 }
 .hero-price-box .off {
   font-family: 'Shippori Mincho', serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   color: #fff;
   background: linear-gradient(135deg, #0ABAB5, #5DD6D1);
   display: inline-block;
-  padding: 4px 16px;
+  padding: 3px 14px;
   border-radius: 9999px;
   margin-bottom: 10px;
 }
@@ -3133,7 +3133,7 @@ footer {
     margin: 0 0 12px !important;
   }
   .hero-price-box .price    { font-size: clamp(24px, 7vw, 34px) !important; }
-  .hero-price-box .off      { font-size: 10px !important; letter-spacing: 0.04em !important; padding: 3px 10px !important; }
+  .hero-price-box .off      { font-size: 10px !important; }
   .hero-price-box .price-original { font-size: 12px !important; }
 
   /* CTAボタン: 縦並び・フル幅・44px以上 */
