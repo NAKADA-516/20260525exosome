@@ -3313,7 +3313,7 @@ footer {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    object-position: center top;
+    object-position: 70% center;
     display: block;
   }
   .ingr-content { padding: 40px 20px !important; }
