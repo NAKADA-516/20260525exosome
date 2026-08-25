@@ -1,9 +1,7 @@
 name: Deploy to production
-# Trigger production FTP deploy on push to main.
+# Manual only. Do not deploy on push.
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
